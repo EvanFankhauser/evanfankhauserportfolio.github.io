@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Grabbers</title>
+    <link rel="stylesheet" href="../../styles/project-page-styles.css">
+</head>
+
+<body>
+
+    <div id="home">
+        <a href="../../index.html">Home</a>
+    </div>
+
+    <div id="Title">
+        <h1>Treasure Grabbers</h1>
+    </div>
+
+    <div id="Date">
+        <h2>Completed: December 2023</h2>
+    </div>
+
+    <img id="header-img" src="../../media/semester-3/treasure-grabbers/TG_Running.png" alt="The treasure grabber simulation">
+
+    <hr>
+
+    <div id="Description">
+        <h3>Description</h3>
+        <p>
+            Treasure Grabbers is a simulation focused around flocking behaviors. <br>
+            There are three groups of creatures, each attempting to gather coins to <br>
+            bring to their respective hoards. The creatures behave as follows:
+
+
+        <ul>A Dragon that:
+            <li>Wanders around the area, picking up gold as it comes into contact with it.</li>
+            <li>Returns to its hoard to deposit the gold once it has collected 25 gold.</li>
+            <li>Begins wandering to collect gold, repeating the cycle.</il>
+        </ul>
+        <ul>Goblins who:
+            <li>Pathfind to the nearest piece of gold, changing target as new gold appears.</li>
+            <li>Separate from other Goblins.</li>
+            <li>Avoid boulders and other creatures' hoard.</li>
+            <li>Flee from the dragon or cyclopes, even if it costs them gold.</li>
+            <li>Return to their hoard and deposit their gold once they have 5, then restarting the hunt.</li>
+        </ul>
+        <ul>and Cyclopes that:
+            <li>Pathfind to the nearest gold, not changing target until it is collected.</li>
+            <li>Separate from other cyclopes.</li>
+            <li>Avoid boulders.</li>
+            <li>Ignore the dragon and goblins.</li>
+            <li>Return to their hoard to deposit gold once they have collected 15, then restarting the hunt.
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Image Gallery</h3>
+    <div id="Images" class="container">
+        <div class="gallery-item">
+            <img alt="The goblin Sprite" src="../../media/semester-3/treasure-grabbers/Goblin.png">
+            <p class="caption">Goblin Sprite.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="The Cyclops sprite" src="../../media/semester-3/treasure-grabbers/Cyclops.png">
+            <p class="caption">Cyclops Sprite.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="Hoard sprite" src="../../media/semester-3/treasure-grabbers/Hoard.png">
+            <p class="caption">Hoard Sprite, color tint applied in Unity Engine.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="The stone obstacle Sprite" src="../../media/semester-3/treasure-grabbers/Stone.png">
+            <p class="caption">Boulder obstacle Sprite.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Video Demo</h3>
+        <video controls>
+        <!--   <source src="../../media/semester-3/treasure-grabbers/TG_Video.mp4">-->  
+            Your browser does not support this video type.
+        </video> <br>
+        <!-- <a href="">Watch on YouTube</a> -->
+    <hr>
+
+    <h3>Links</h3>
+    <div id="Links">
+        <a href="https://igme-202-2231.github.io/project-2-EvanFankhauser/" target="_blank">View Treasure Grabbers in
+            your web browser</a>
+        <p>
+            Dragon sprite created by ZaPaper and Jordan Irwin <br>
+            <a href="https://opengameart.org/content/flying-dragon-rework">Accessed from OpenGameArt.org</a> <br>
+            Created by ZaPaper & Jordan Irwin (AntumDeluge); <br>
+            <a href="http://www.buko-studios.com/ ">Credits to Buko Studions </a> <br>
+        <a href="https://www.playcraftapp.com/">Commissioned by PlayCraft</a> 
+        </p>
+    </div>
+
+    <hr>
+
+    <div id="Improvements">
+        <h3>Possible Improvements</h3>
+        <ul>
+            <li>Prevent coins from spawning on obstacles.</li>
+            <li>Tweak flocking values.</li>
+            <li>Increase number of coins spawned.</li>
+            <li>Add behavior for the dragon to periodically circle its hoard.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

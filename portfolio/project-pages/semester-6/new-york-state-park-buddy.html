@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NY State Park Buddy</title>
+    <link rel="stylesheet" href="../../styles/project-page-styles.css">
+</head>
+<body>
+
+    <div id="home">
+        <a href="../../index.html">Home</a>
+    </div>
+    
+    <div id="Title">
+        <h1>NY State Park Buddy</h1>
+    </div>
+
+    <div id="Date">
+        <h2>Date Completed: April 2025</h2>
+    </div>
+
+    <img id="header-img" src="../../media/semester-6/park-buddy/defaultState.png" alt="The default state of the website">
+
+    <hr>
+
+    <div id="Description">
+        <h3>Description</h3>
+        <p>
+            The New York State Park Buddy was my final project for a web development and JavaScript course. <br>
+            The webpage is built with HTML and JavaScript, and the styling is a mix of CSS and Bulma. <br>
+            The project uses the MapBox API to display New York state parks on a map, and FireBase to store popular favorite parks. <br>
+            Users can click on map pins to see a description of each park, some information such as the address, and add or remove <br>
+            the park from their list of favorites.  <br>
+            Each pin also prompts a pop-up with the park's name, address and phone number. <br>
+            Each user's list of favorite parks are saved in local storage, and a database tracks how many favorite lists each park  <br>
+            is currently on. <br>
+            The user's favorite parks are displayed on the right side of the screen, and clicking one has the same behavior as clicking <br>
+            the park's pin on the map. <br>
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Image Gallery</h3>
+    <div id="Images" class="container">
+        <div class="gallery-item">
+            <img alt="The pop-up when a pin is clicked" src="../../media/semester-6/park-buddy/clickedPin.png">
+            <p class="caption">The pop-up when a pin is clicked.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="The info panel for a favorited park" src="../../media/semester-6/park-buddy/favoritedPark.png">
+            <p class="caption">The info panel for a favorited park.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="The details panel for the selected park." src="../../media/semester-6/park-buddy/detailsPanel.png">
+            <p class="caption">The details panel for the selected park.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="A display of favorited parks." src="../../media/semester-6/park-buddy/favoritesPanel.png">
+            <p class="caption">A display of favorited parks.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Video Demo</h3>
+        <video controls>
+        <!--  <source src="../../media/semester-6/park-buddy/PB_video.mp4">-->   
+            Your browser does not support this video type.
+        </video> <br>
+        <!-- <a href="">Watch on YouTube</a> -->
+    <hr>
+
+    <h3>Links</h3>
+    <div id="Links">
+        <a href="https://people.rit.edu/epf4946/330/fankhauser-e-hw-4/fankhauser-e-hw4/" target="_blank">
+            Access Park Buddy in your Browser</a>
+    </div>
+
+    <hr>
+
+    <div id="Improvements">
+        <h3>Possible Improvements</h3>
+        <ul>
+            <li>Make "favorites" bar a static size</li>
+            <li>Increase margin size between panels</li>
+            <li>
+                A slight but very specific bug. Switching from a park with a long description to a shorter one
+                while scrolled to the bottom for the page will not prompt the second park's pop-up.
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

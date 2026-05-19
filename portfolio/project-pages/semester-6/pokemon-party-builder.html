@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Party Builder</title>
+    <link rel="stylesheet" href="../../styles/project-page-styles.css">
+</head>
+<body>
+
+    <div id="home">
+        <a href="../../index.html">Home</a>
+    </div>
+    
+    <div id="Title">
+        <h1>Pokemon Party Builder</h1>
+    </div>
+
+    <div id="Date">
+        <h2>Date Completed (Original): November 2023</h2>
+        <h2>Date Completed (Updated): April 2025</h2>
+    </div>
+
+    <img id="header-img" src="../../media/semester-6/pokemon-party-builder/sample-team.png" 
+        alt="A Sample Pokemon Party on the website. Fans may recognize them as Cythia's Pokemon from Diamond and Pearl">
+
+    <hr>
+
+    <div id="Description">
+        <h3>Description</h3>
+        <p>
+            A website that uses a fan-made Pokemon API to allow users to build a Pokemon party. <br>
+            The project was originally started for my first web development course, and updated as part of my second. <br>
+            The original page was created with HTML, CSS and JavaScript. The updated version replaced some CSS with Bulma. <br>
+            <br>
+            Users can use the search functions to search for Pokemon by name or by type. <br>
+            Clicking on one of the resulting buttons will add that Pokemon to the next available slot. <br>
+            Like the main games, only 6 Pokemon may be in the party at a time. They can be removed with the "clear" button. <br>
+            Users can also choose to randomize one of the Pokemon in a slot. They can randomize a full slot if desired. <br>
+            <br>
+            The improvements in the updated version are primarily to the backend. <br>
+            I changed the JavaScript to TypeScript and added strong variable typings to almost every variable.  <br>
+            There were a few exceptions, such as a click handler and some API data, that would cause errors if not left as they were. <br>
+            I created a class to hold the relevant information for each Pokemon to further organize the project. <br>
+            I also created an enumeration of all 18 Pokemon types to remove the need to check for strings, and sanitize input for invalid types.<br>
+            On the front end, the styling of the search area has been replaced with Bulma. <br>
+            There is also a navigation bar at the top of the page that allows the user to move between the app and a description page. <br>
+            <br>
+            The original had a few bugs, such as searches by type not populating in numerical order.  <br>
+            This specific bug was fixed in the updated version for initial searches. <br>
+            The next step is to implement a sorting algorithm to ensure the results are sorted correctly. <br>
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Video Demo</h3>
+        <video controls>
+        <!--   <source src="../../media/semester-6/pokemon-party-builder/part_video.mp4">-->  
+            Your browser does not support this video type.
+        </video> <br>
+        <!-- <a href="">Watch on YouTube</a> -->
+    <hr>
+
+    <h3>Image Gallery (Refactored Version Only)</h3>
+    <div id="Images" class="container">
+        <div class="gallery-item">
+            <img alt="An empty party slot" src="../../media/semester-6/pokemon-party-builder/emptySlot.png">
+            <p class="caption">An empty party slot.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="A party slot filled by Doduo" src="../../media/semester-6/pokemon-party-builder/filledSlot.png">
+            <p class="caption">A filled party slot.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="A search result by name for Nidoking" src="../../media/semester-6/pokemon-party-builder/searchByName.png">
+            <p class="caption">Search result by name.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="A search result for Steel type Pokemon" src="../../media/semester-6/pokemon-party-builder/searchByType.png">
+            <p class="caption">Search result by type.</p>
+        </div>
+        <div class="gallery-item">
+            <img alt="The warning messege when trying to add a Pokemon to a full party."
+                src="../../media/semester-6/pokemon-party-builder/partyFullMessage.png">
+            <p class="caption">The warning message when trying to add to a full party.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>Links</h3>
+    <div id="Links">
+        <a href="https://people.rit.edu/epf4946/235/project2/index.html" target="_blank">Original Version</a> <br>
+        <a href="https://people.rit.edu/epf4946/330/fankhauser-e-hw3/home.html" target="_blank">Refactored Version</a> <br>
+    </div>
+
+    <hr>
+
+    <div id="Improvements">
+        <h3>Possible Improvements</h3>
+        <ul>
+            <li>Change all of the styling to use the Bulma framework</li>
+            <li>Fix the spacking on the nav bar on the app page</li>
+            <li>Find a way to make the search quit if it does not yield results</li>
+            <li>Update the search result buttons to have more information, like an image</li>
+            <li>Add function to store parties in local storage</li>
+            <li>Populate results so the most resently searched for are at the top</li>
+        </ul>
+    </div>
+
+</body>
+</html>

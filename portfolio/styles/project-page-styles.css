@@ -1,0 +1,121 @@
+/* Body */
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: whitesmoke;
+    border: 5px solid black;
+}
+
+/* Text sizes */
+h1{
+    font-size: 48pt;
+}
+
+h2{
+    font-size: 28pt;
+}
+
+h3{
+    font-size: 24pt;
+}
+
+p{
+    font-size: 18pt;
+}
+
+ul{
+    font-size: 18pt;
+}
+
+a {
+    font-size: 18pt;
+}
+
+/* Header Image */
+#header-img {
+    max-width: 480px; 
+}
+
+/* Anchor colors */
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: violet;
+}
+
+a:hover{
+    color: crimson;
+}
+
+a:active{
+    color: gray;
+}
+
+/* Image Gallery */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: dodgerblue;
+    padding: 10px;
+    gap: 5pt;
+}
+
+.container .gallery-item {
+    background-color: #f1f1f1;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.container img {
+    max-width: 320px;
+    max-height: 320px;
+}
+
+video{
+    max-width: 960px;
+    max-height: 640px;
+}
+
+#home {
+    position: sticky;
+    top: 0px;
+    height: 30px;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background: dodgerblue;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.1s ease-in,
+        background-color 0.5s linear;
+}
+
+#home a:link{
+    color: white;
+}
+
+#home a:visited{
+    color: white;
+}
+
+#home a:hover {
+    background: red;
+    color: blue;
+    transform: scale(1.1);
+}
+
+#home a:active{
+    color: white;
+}
